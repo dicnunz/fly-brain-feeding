@@ -50,11 +50,11 @@ The browser remained responsive while running at approximately real time. These 
 
 There is no WebGPU/WebGL simulation or remote inference. Canvas drawing time is measured; GPU composition time and total browser-process memory were not independently measured. Main-context heap figures do not include the worker’s full memory. The packed graph is transferred to the worker once; subsequent messages carry small state summaries and observed spike events, never the entire network. Serialization overhead is included in browser CPU observations but was not isolated as a separate benchmark.
 
-## Boundaries
-
 ## Publication checks
 
 The public GitHub Pages version was loaded and interacted with: sugar activated MN9 and extended the joint; bitter coactivation suppressed both. All 15 tests also passed in a fresh GitHub clone and in GitHub Actions. Repository files were compared by hash with the local publication set, including the complete neural data and preview image. The downloadable ZIP was downloaded through its public release URL and matched the local archive's SHA-256. Archive CRCs and every contained file were checked. Its extracted contents were independently opened over local HTTP and exercised, including a paused reset that cleared all displayed counters.
+
+## Boundaries
 
 The browser automation tool rejects local `file:` URLs. Direct double-click execution was therefore not verified, and no alternate browser or security workaround was used. The runtime uses ordinary local scripts, built-in gzip decoding and a Blob worker so it is designed to work without a server. Automated runtime checks use HTTP. Safari and Firefox execution were not tested.
 

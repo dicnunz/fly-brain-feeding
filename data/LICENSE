@@ -1,0 +1,56 @@
+The model connectivity, original neuron IDs, and paper neuron selections in
+connectome.js and metadata.json are a lossless repacking of the data distributed
+by Philip Shiu and Nico Spiller in their Drosophila_brain_model repository and
+official research archive, https://doi.org/10.17617/3.CZODIW. The archive explicitly
+licenses the v630 connectivity and completeness files under the MIT License.
+Their original MIT notice follows below.
+
+FlyWire's general public-data guidelines specify Creative Commons Attribution-
+NonCommercial 4.0 International (CC BY-NC 4.0):
+https://flywire.ai/guidelines
+https://creativecommons.org/licenses/by-nc/4.0/
+
+This package retains both source notices and treats underlying connectome reuse
+as noncommercial. The MIT archive notice is not interpreted as overriding the
+upstream FlyWire terms. This is not a claim of a choice of alternative licenses.
+The dataset may be copied and adapted for noncommercial purposes with source
+attribution, a link to the applicable terms, and an indication of modifications.
+No additional rights over the biological source data are claimed here.
+
+Underlying biological reconstruction: FlyWire Consortium, Dorkenwald et al.,
+Neuronal wiring diagram of an adult brain, Nature (2024),
+https://doi.org/10.1038/s41586-024-07558-y.
+Neuron annotations: Schlegel et al., Whole-brain annotation and multi-connectome
+cell typing of Drosophila, Nature (2024),
+https://doi.org/10.1038/s41586-024-07686-5.
+Neurotransmitter predictions: Eckstein, Bates et al., Cell (2024),
+https://doi.org/10.1016/j.cell.2024.03.016.
+Computational model and selected sensory/motor identities: Shiu et al.,
+A Drosophila computational brain model reveals sensorimotor processing,
+Nature (2024), https://doi.org/10.1038/s41586-024-07763-9.
+
+This independent adaptation has no affiliation with or endorsement by these
+authors or institutions. All source neuron and connection identities are
+preserved. Storage format changes are documented in metadata.json.
+
+MIT License
+
+Copyright (c) 2023 Philip Shiu and Nico Spiller
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A contact-taste experiment with the original Shiu fly-brain model: 127,400 neurons, real synaptic connectivity, and a simplified moving proboscis.">
+  <title>Fly brain · feeding</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><h1>Fly brain <span>/ feeding</span></h1><button id="pause" disabled>Pause</button></header>
+    <div id="stage">
+      <canvas id="fly" tabindex="0" role="img" aria-label="A tethered fruit fly and a movable sugar droplet. Drag the droplet to the mouth, or focus this view and use arrow keys to move it. Press Enter to touch the mouth."></canvas>
+      <p id="instruction">Drag the drop to the mouth.</p>
+      <p id="loading" role="status">Loading the published network…</p>
+    </div>
+    <div class="controls" aria-label="Experiment controls">
+      <button id="touch" disabled>Touch mouth</button>
+      <label><input id="bitter" type="checkbox" disabled> Add bitter</label>
+      <label><input id="taste" type="checkbox" disabled> Block taste</label>
+      <label><input id="motor" type="checkbox" disabled> Silence MN9</label>
+      <button id="reset" disabled>New trial</button>
+    </div>
+    <div class="signals" aria-label="Live causal signals">
+      <div><span>Taste input</span><strong id="input-rate">0 Hz</strong></div><b aria-hidden="true">→</b>
+      <div><span>Network spikes</span><strong id="network-rate">0 / s</strong></div><b aria-hidden="true">→</b>
+      <div><span>MN9 motor output</span><strong id="motor-rate">0 · 0 Hz</strong></div><b aria-hidden="true">→</b>
+      <div><span>Rostrum rotation</span><strong id="angle">0°</strong></div>
+    </div>
+    <details id="inspect"><summary>Inspect the circuit</summary>
+      <p>Each mark is a computed spike. The two MN9 neurons drive the moving joint. Labels identify the cells in the source model.</p>
+      <canvas id="raster" role="img" aria-label="Rolling spike raster showing sugar taste neurons, bitter taste neurons, and the two MN9 motor neurons over the last two seconds."></canvas>
+      <div id="cells"></div>
+      <p id="performance"></p>
+    </details>
+    <footer>
+      <p>127,400 neurons · FlyWire v630 · Shiu et al. 2024</p>
+      <p>Contact taste and feeding initiation. Simplified muscle and joints; the body is held still.</p>
+      <a href="about.html">Model, sources &amp; limits</a>
+    </footer>
+  </main>
+  <script src="model.js"></script>
+  <script src="body.js"></script>
+  <script src="draw.js"></script>
+  <script src="app.js"></script>
+  <script src="data/connectome.js" onerror="document.getElementById('loading').textContent='The network file could not load. Extract the complete ZIP, then open index.html.'"></script>
+  <script>startExperiment().catch(showFailure);</script>
+</body>
+</html>

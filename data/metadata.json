@@ -1,0 +1,590 @@
+{
+  "format": "flywire-csr-v1",
+  "endianness": "little",
+  "materialization": 630,
+  "neuronCount": 127400,
+  "edgeCount": 14687178,
+  "anatomicalSynapseCount": 52793639,
+  "weightUnit": "signed anatomical synapse count; multiply by 0.275 mV",
+  "byteOffsets": {
+    "offsets": 0,
+    "targets": 509604,
+    "weights": 59258316,
+    "ids": 88632672
+  },
+  "byteLengths": {
+    "offsets": 509604,
+    "targets": 58748712,
+    "weights": 29374356,
+    "ids": 1019200
+  },
+  "uncompressedBytes": 89651872,
+  "compressedBytes": 45655576,
+  "sha256": "d369e346db7ab655be4edbb3abeb8cf9473f622a6f83b6e4dc1bab922990c9c3",
+  "gzipSha256": "f7fce31dbe4d7230b50a4cd4c1d7e4fb27a450f48c29e54c26187566f779f481",
+  "groups": {
+    "sweet": [
+      65153,
+      90982,
+      113421,
+      114820,
+      27680,
+      93880,
+      102632,
+      48902,
+      47685,
+      119716,
+      117163,
+      27293,
+      116889,
+      44337,
+      31392,
+      100853,
+      103321,
+      14231,
+      84634,
+      86214,
+      11916
+    ],
+    "bitter": [
+      49043,
+      54,
+      27948,
+      36101,
+      70965,
+      34035,
+      78689,
+      90788,
+      124264,
+      8716,
+      123974,
+      78054,
+      51714,
+      45008,
+      86057,
+      8347,
+      8714,
+      35523,
+      18731,
+      15402,
+      473
+    ],
+    "water": [
+      15123,
+      98671,
+      2764,
+      13922,
+      54895,
+      24948,
+      127228,
+      52810,
+      17261,
+      89146,
+      68977,
+      17811,
+      31018,
+      123235,
+      66257,
+      92660,
+      108302,
+      107292
+    ],
+    "mn9": [
+      127193,
+      123773
+    ],
+    "roundup": [
+      4346,
+      56488
+    ],
+    "bract": [
+      72412,
+      123314,
+      76490,
+      7974
+    ],
+    "clavicle": [
+      101738,
+      126657
+    ],
+    "fudog": [
+      102598,
+      14146
+    ],
+    "phantom": [
+      113844,
+      24660
+    ],
+    "rattle": [
+      92209,
+      114540
+    ],
+    "usnea": [
+      120371,
+      101737
+    ],
+    "G2N_1": [
+      59156,
+      44190
+    ],
+    "FMIn": [
+      111601,
+      20501
+    ],
+    "Fdg": [
+      124808,
+      99123
+    ]
+  },
+  "neurons": {
+    "65153": {
+      "id": "720575940624963786",
+      "group": "sweet",
+      "label": "Sugar GRN 1"
+    },
+    "90982": {
+      "id": "720575940630233916",
+      "group": "sweet",
+      "label": "Sugar GRN 2"
+    },
+    "113421": {
+      "id": "720575940637568838",
+      "group": "sweet",
+      "label": "Sugar GRN 3"
+    },
+    "114820": {
+      "id": "720575940638202345",
+      "group": "sweet",
+      "label": "Sugar GRN 4"
+    },
+    "27680": {
+      "id": "720575940617000768",
+      "group": "sweet",
+      "label": "Sugar GRN 5"
+    },
+    "93880": {
+      "id": "720575940630797113",
+      "group": "sweet",
+      "label": "Sugar GRN 6"
+    },
+    "102632": {
+      "id": "720575940632889389",
+      "group": "sweet",
+      "label": "Sugar GRN 7"
+    },
+    "48902": {
+      "id": "720575940621754367",
+      "group": "sweet",
+      "label": "Sugar GRN 8"
+    },
+    "47685": {
+      "id": "720575940621502051",
+      "group": "sweet",
+      "label": "Sugar GRN 9"
+    },
+    "119716": {
+      "id": "720575940640649691",
+      "group": "sweet",
+      "label": "Sugar GRN 10"
+    },
+    "117163": {
+      "id": "720575940639332736",
+      "group": "sweet",
+      "label": "Sugar GRN 11"
+    },
+    "27293": {
+      "id": "720575940616885538",
+      "group": "sweet",
+      "label": "Sugar GRN 12"
+    },
+    "116889": {
+      "id": "720575940639198653",
+      "group": "sweet",
+      "label": "Sugar GRN 13"
+    },
+    "44337": {
+      "id": "720575940620900446",
+      "group": "sweet",
+      "label": "Sugar GRN 14"
+    },
+    "31392": {
+      "id": "720575940617937543",
+      "group": "sweet",
+      "label": "Sugar GRN 15"
+    },
+    "100853": {
+      "id": "720575940632425919",
+      "group": "sweet",
+      "label": "Sugar GRN 16"
+    },
+    "103321": {
+      "id": "720575940633143833",
+      "group": "sweet",
+      "label": "Sugar GRN 17"
+    },
+    "14231": {
+      "id": "720575940612670570",
+      "group": "sweet",
+      "label": "Sugar GRN 18"
+    },
+    "84634": {
+      "id": "720575940628853239",
+      "group": "sweet",
+      "label": "Sugar GRN 19"
+    },
+    "86214": {
+      "id": "720575940629176663",
+      "group": "sweet",
+      "label": "Sugar GRN 20"
+    },
+    "11916": {
+      "id": "720575940611875570",
+      "group": "sweet",
+      "label": "Sugar GRN 21"
+    },
+    "49043": {
+      "id": "720575940621778381",
+      "group": "bitter",
+      "label": "Bitter GRN 1"
+    },
+    "54": {
+      "id": "720575940602353632",
+      "group": "bitter",
+      "label": "Bitter GRN 2"
+    },
+    "27948": {
+      "id": "720575940617094208",
+      "group": "bitter",
+      "label": "Bitter GRN 3"
+    },
+    "36101": {
+      "id": "720575940619197093",
+      "group": "bitter",
+      "label": "Bitter GRN 4"
+    },
+    "70965": {
+      "id": "720575940626287336",
+      "group": "bitter",
+      "label": "Bitter GRN 5"
+    },
+    "34035": {
+      "id": "720575940618600651",
+      "group": "bitter",
+      "label": "Bitter GRN 6"
+    },
+    "78689": {
+      "id": "720575940627692048",
+      "group": "bitter",
+      "label": "Bitter GRN 7"
+    },
+    "90788": {
+      "id": "720575940630195909",
+      "group": "bitter",
+      "label": "Bitter GRN 8"
+    },
+    "124264": {
+      "id": "720575940646212996",
+      "group": "bitter",
+      "label": "Bitter GRN 9"
+    },
+    "8716": {
+      "id": "720575940610483162",
+      "group": "bitter",
+      "label": "Bitter GRN 10"
+    },
+    "123974": {
+      "id": "720575940645743412",
+      "group": "bitter",
+      "label": "Bitter GRN 11"
+    },
+    "78054": {
+      "id": "720575940627578156",
+      "group": "bitter",
+      "label": "Bitter GRN 12"
+    },
+    "51714": {
+      "id": "720575940622298631",
+      "group": "bitter",
+      "label": "Bitter GRN 13"
+    },
+    "45008": {
+      "id": "720575940621008895",
+      "group": "bitter",
+      "label": "Bitter GRN 14"
+    },
+    "86057": {
+      "id": "720575940629146711",
+      "group": "bitter",
+      "label": "Bitter GRN 15"
+    },
+    "8347": {
+      "id": "720575940610259370",
+      "group": "bitter",
+      "label": "Bitter GRN 16"
+    },
+    "8714": {
+      "id": "720575940610481370",
+      "group": "bitter",
+      "label": "Bitter GRN 17"
+    },
+    "35523": {
+      "id": "720575940619028208",
+      "group": "bitter",
+      "label": "Bitter GRN 18"
+    },
+    "18731": {
+      "id": "720575940614281266",
+      "group": "bitter",
+      "label": "Bitter GRN 19"
+    },
+    "15402": {
+      "id": "720575940613061118",
+      "group": "bitter",
+      "label": "Bitter GRN 20"
+    },
+    "473": {
+      "id": "720575940604027168",
+      "group": "bitter",
+      "label": "Bitter GRN 21"
+    },
+    "15123": {
+      "id": "720575940612950568",
+      "group": "water",
+      "label": "Water GRN 1"
+    },
+    "98671": {
+      "id": "720575940631898285",
+      "group": "water",
+      "label": "Water GRN 2"
+    },
+    "2764": {
+      "id": "720575940606002609",
+      "group": "water",
+      "label": "Water GRN 3"
+    },
+    "13922": {
+      "id": "720575940612579053",
+      "group": "water",
+      "label": "Water GRN 4"
+    },
+    "54895": {
+      "id": "720575940622902535",
+      "group": "water",
+      "label": "Water GRN 5"
+    },
+    "24948": {
+      "id": "720575940616177458",
+      "group": "water",
+      "label": "Water GRN 6"
+    },
+    "127228": {
+      "id": "720575940660292225",
+      "group": "water",
+      "label": "Water GRN 7"
+    },
+    "52810": {
+      "id": "720575940622486922",
+      "group": "water",
+      "label": "Water GRN 8"
+    },
+    "17261": {
+      "id": "720575940613786774",
+      "group": "water",
+      "label": "Water GRN 9"
+    },
+    "89146": {
+      "id": "720575940629852866",
+      "group": "water",
+      "label": "Water GRN 10"
+    },
+    "68977": {
+      "id": "720575940625861168",
+      "group": "water",
+      "label": "Water GRN 11"
+    },
+    "17811": {
+      "id": "720575940613996959",
+      "group": "water",
+      "label": "Water GRN 12"
+    },
+    "31018": {
+      "id": "720575940617857694",
+      "group": "water",
+      "label": "Water GRN 13"
+    },
+    "123235": {
+      "id": "720575940644965399",
+      "group": "water",
+      "label": "Water GRN 14"
+    },
+    "66257": {
+      "id": "720575940625203504",
+      "group": "water",
+      "label": "Water GRN 15"
+    },
+    "92660": {
+      "id": "720575940630553415",
+      "group": "water",
+      "label": "Water GRN 16"
+    },
+    "108302": {
+      "id": "720575940635172191",
+      "group": "water",
+      "label": "Water GRN 17"
+    },
+    "107292": {
+      "id": "720575940634796536",
+      "group": "water",
+      "label": "Water GRN 18"
+    },
+    "127193": {
+      "id": "720575940660219265",
+      "group": "mn9",
+      "label": "MN9 1"
+    },
+    "123773": {
+      "id": "720575940645521262",
+      "group": "mn9",
+      "label": "MN9 2"
+    },
+    "4346": {
+      "id": "720575940607272649",
+      "group": "roundup",
+      "label": "roundup 1"
+    },
+    "56488": {
+      "id": "720575940623211725",
+      "group": "roundup",
+      "label": "roundup 2"
+    },
+    "72412": {
+      "id": "720575940626557442",
+      "group": "bract",
+      "label": "bract 1"
+    },
+    "123314": {
+      "id": "720575940645045527",
+      "group": "bract",
+      "label": "bract 2"
+    },
+    "76490": {
+      "id": "720575940627285267",
+      "group": "bract",
+      "label": "bract 3"
+    },
+    "7974": {
+      "id": "720575940610001220",
+      "group": "bract",
+      "label": "bract 4"
+    },
+    "101738": {
+      "id": "720575940632648868",
+      "group": "clavicle",
+      "label": "clavicle 1"
+    },
+    "126657": {
+      "id": "720575940655014049",
+      "group": "clavicle",
+      "label": "clavicle 2"
+    },
+    "102598": {
+      "id": "720575940632877869",
+      "group": "fudog",
+      "label": "fudog 1"
+    },
+    "14146": {
+      "id": "720575940612648106",
+      "group": "fudog",
+      "label": "fudog 2"
+    },
+    "113844": {
+      "id": "720575940637763135",
+      "group": "phantom",
+      "label": "phantom 1"
+    },
+    "24660": {
+      "id": "720575940616103218",
+      "group": "phantom",
+      "label": "phantom 2"
+    },
+    "92209": {
+      "id": "720575940630461660",
+      "group": "rattle",
+      "label": "rattle 1"
+    },
+    "114540": {
+      "id": "720575940638103349",
+      "group": "rattle",
+      "label": "rattle 2"
+    },
+    "120371": {
+      "id": "720575940641366517",
+      "group": "usnea",
+      "label": "usnea 1"
+    },
+    "101737": {
+      "id": "720575940632648612",
+      "group": "usnea",
+      "label": "usnea 2"
+    },
+    "59156": {
+      "id": "720575940623718380",
+      "group": "G2N_1",
+      "label": "G2N_1 1"
+    },
+    "44190": {
+      "id": "720575940620874757",
+      "group": "G2N_1",
+      "label": "G2N_1 2"
+    },
+    "111601": {
+      "id": "720575940636675214",
+      "group": "FMIn",
+      "label": "FMIn 1"
+    },
+    "20501": {
+      "id": "720575940614763666",
+      "group": "FMIn",
+      "label": "FMIn 2"
+    },
+    "124808": {
+      "id": "720575940647030324",
+      "group": "Fdg",
+      "label": "Fdg 1"
+    },
+    "99123": {
+      "id": "720575940631997032",
+      "group": "Fdg",
+      "label": "Fdg 2"
+    }
+  },
+  "source": {
+    "repository": "https://github.com/philshiu/Drosophila_brain_model",
+    "commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+    "archive": "https://doi.org/10.17617/3.CZODIW",
+    "archiveLicense": "MIT",
+    "archiveLicenseMetadata": "https://edmond.mpdl.mpg.de/api/datasets/:persistentId/?persistentId=doi:10.17617/3.CZODIW",
+    "underlyingDataGuidelines": "https://flywire.ai/guidelines",
+    "underlyingDataLicense": "CC-BY-NC-4.0",
+    "licenseNote": "The exact author-distributed model input files have an MIT archive notice. FlyWire general public-data guidelines specify CC BY-NC 4.0. Both notices are retained; this package treats underlying connectome reuse as noncommercial and does not interpret the archive notice as overriding upstream terms.",
+    "files": {
+      "2023_03_23_completeness_630_final.csv": {
+        "url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/2023_03_23_completeness_630_final.csv",
+        "sha256": "e6b71e17671a9bdb05f55e4bc6774640a1418cb7a05125e0fc994ad40f9bfdfb"
+      },
+      "2023_03_23_connectivity_630_final.parquet": {
+        "url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/2023_03_23_connectivity_630_final.parquet",
+        "sha256": "94db8c650533bc36ffa3223f2e62325d5648b8d6bd31c3a4e1c804628c7557b3"
+      },
+      "figures.ipynb": {
+        "url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/figures.ipynb",
+        "sha256": "33cd73c0b4b4a291c51b7bab639c4fa28978e49e111ff0d6adbca5687addb84c"
+      },
+      "sez_neurons.pickle": {
+        "url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/sez_neurons.pickle",
+        "sha256": "2bc5a2a8289924f2de39a8e68bdc07025cb6d6c6c6ddc83a973c0cace7cec2ce"
+      }
+    }
+  },
+  "transformation": "Every original v630 neuron and edge retained. Rows sorted by presynaptic then postsynaptic index. Signed anatomical counts stored losslessly as Int16. Original root IDs stored losslessly as Uint64. No aggregation, pruning, fitting, or injected connections."
+}

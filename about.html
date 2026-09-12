@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Model and limits · Fly brain</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head>
+<body><main class="prose">
+<nav><a href="index.html">← Return to the fly</a></nav>
+<h1>A feeding initiation experiment</h1>
+<p>This is a browser adaptation of <a href="https://www.nature.com/articles/s41586-024-07763-9">Shiu and colleagues’ 2024 computational fly-brain model</a>. All 127,400 neurons and 14,687,178 directed, signed connections from their original FlyWire v630 model are included. The connections represent 52,793,639 anatomical synapses. The experiment activates a small part of that network.</p>
+<p>The visible action is proboscis extension in a held adult female <i>Drosophila melanogaster</i>. It does not walk, fly, groom, learn, swallow or become satiated. Its wings and legs depict a fixed posture. The neural graph is extensive; the modeled behavior is deliberately narrow.</p>
+<h2>What “brain controlled” means here</h2>
+<p>A droplet must overlap the moving labellum, the end of the proboscis, to stimulate 21 identified sugar taste neurons. “Add bitter” also stimulates the authors’ 21 bitter taste neurons. Each receives the published model’s stochastic input at 200 Hz while contact persists. This is an assumed contact-to-stimulation mapping, not a measured sugar concentration or receptor model.</p>
+<p>Those inputs enter the actual recurrent network. Every neuron has the same simplified spiking dynamics used by the authors. Synaptic counts and the authors’ inferred transmitter signs determine how spikes excite or inhibit other neurons. There are no learned weights, added steering rules or prerecorded movements.</p>
+<p>Spikes from the two identified MN9 motor neurons drive a damped protractor joint. <a href="https://elifesciences.org/articles/54978">McKellar and colleagues</a> experimentally identified MN9’s control of rostrum protraction and its mechanical coupling to the haustellum. Here the muscle gain, elastic return, damping, segment lengths and coupling angles are illustrative assumptions. This is a two-dimensional mechanical readout, not a validated biomechanical reconstruction.</p>
+<p>As the proboscis moves, its labellum changes position relative to the drop. That changes contact and therefore the next sensory input. A drop at the edge of reach can produce repeated contact and withdrawal. That rhythm is a consequence of this model’s geometry and dynamics; it is not a reproduction of a measured feeding rhythm.</p>
+<h2>Try a causal test</h2>
+<ul>
+<li><strong>Touch mouth:</strong> places the droplet at the labellum. You can also drag it, or focus the fly and use arrow keys. Enter places it at the mouth.</li>
+<li><strong>Add bitter:</strong> coactivates the identified bitter inputs. Suppression of MN9 arises inside the network; no code tells the proboscis to retract when bitter is selected.</li>
+<li><strong>Block taste:</strong> removes external sensory stimulation while leaving the network intact. Existing activity can decay afterward.</li>
+<li><strong>Silence MN9:</strong> clamps both MN9 cells at rest and blocks their output. This is an idealized intervention motivated by experimental silencing. Taste and upstream brain activity continue.</li>
+<li><strong>New trial:</strong> restores resting neurons and the droplet’s initial position with a new random seed. Stochastic input makes individual trials differ.</li>
+</ul>
+<p>The input display reports imposed stimulation, not measured receptor firing. The network counter counts actual spikes per second. MN9 rates come from actual spikes over approximately 250 ms. The inspection raster shows individual simulated spike events over two seconds, with separate rows within each taste population. It contains no decorative activity.</p>
+<h2>Dynamics and computation</h2>
+<table><tbody>
+<tr><th>Rest / threshold</th><td>−52 / −45 mV</td></tr>
+<tr><th>Membrane / synaptic timescales</th><td>20 / 5 ms</td></tr>
+<tr><th>Synaptic delay / refractory period</th><td>1.8 / 2.2 ms</td></tr>
+<tr><th>Synaptic gain</th><td>Signed anatomical count × 0.275 mV. The authors fitted this gain.</td></tr>
+<tr><th>Integration</th><td>0.1 ms steps; analytic linear transitions between events. Dormant neurons retain their full state and connectivity.</td></tr>
+</tbody></table>
+<p>A conservative voltage bound allows neurons that cannot reach threshold without new input to sleep computationally. Their state is advanced analytically when needed. No neurons or connections are removed. Computation runs in a browser worker; drawing runs independently. The simulation pauses when the page is hidden. On a slower device it can run below real time without skipping neural steps.</p>
+<h2>What the wiring cannot tell us</h2>
+<p>A static electron-microscopy reconstruction does not specify a functioning living brain. Transmitter predictions and signs are imperfect. This model omits neuron-specific physiology, graded signaling, electrical synapses, receptor-specific effects, neuromodulation, plasticity, metabolism, hunger and spontaneous activity. It has no visual, olfactory, auditory or leg sensory input in this experiment. Silent cells are not evidence that those cells are inactive in a real fly.</p>
+<p>Newer female BANC and male MaleCNS datasets include brain and ventral nerve cord. They are different specimens. This project keeps the original female v630 dataset so the feeding experiment remains traceable to the published model. It does not splice those nervous systems together.</p>
+<p><a href="docs/model-evidence.md">Research and correspondence specification</a> · <a href="docs/validation.md">Validation and measured performance</a> · <a href="data/metadata.json">Exact dataset provenance and hashes</a></p>
+<h2>Sources and reuse</h2>
+<p>Primary sources: <a href="https://www.nature.com/articles/s41586-024-07558-y">Dorkenwald et al., FlyWire connectome</a>; <a href="https://www.nature.com/articles/s41586-024-07686-5">Schlegel et al., cell annotation</a>; <a href="https://github.com/philshiu/Drosophila_brain_model">Shiu et al., model and data</a>; <a href="https://elifesciences.org/articles/54978">McKellar et al., proboscis motor anatomy</a>.</p>
+<p>This is an independent adaptation, without affiliation or endorsement. Original browser code and drawing use the MIT license. The authors’ exact distributed model files carry an MIT archive notice; upstream FlyWire guidelines specify CC BY-NC 4.0. Both notices are retained. Treat reuse of the included connectome as noncommercial; the code license does not override the data terms. See <a href="LICENSE">code license</a> and <a href="data/LICENSE">data terms and attribution</a>.</p>
+</main></body></html>

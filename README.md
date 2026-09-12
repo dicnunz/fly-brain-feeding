@@ -6,7 +6,7 @@ A contact-taste experiment in your browser. A held fruit fly extends its probosc
 
 **[Open the live experiment](https://dicnunz.github.io/fly-brain-feeding/)**, then drag the drop to the fly’s mouth or click **Touch mouth**. The first load includes a 61 MB neural-data script.
 
-To keep an offline copy, **[download fly-brain-feeding.zip](https://github.com/dicnunz/fly-brain-feeding/releases/latest/download/fly-brain-feeding.zip)**. Double-click the ZIP to extract it, open the **fly-brain-feeding** folder, then double-click **index.html**. Keep the other files in that folder. Use a current Chrome, Safari or Firefox browser.
+To keep an offline copy, **[download fly-brain-feeding.zip](https://github.com/dicnunz/fly-brain-feeding/releases/latest/download/fly-brain-feeding.zip)**. Double-click the ZIP to extract it, open the **fly-brain-feeding** folder, then double-click **index.html**. Keep the other files in that folder. It is designed for direct opening in a current browser; that exact opening method remains unverified. Use the live link above for the verified starting path.
 
 No GitHub account, Git, terminal, installation, paid service or remote inference is needed to use the experiment. This repository is simply the project folder and its supporting files. You can ignore GitHub’s Code menu, branches, commits, Issues and Actions.
 

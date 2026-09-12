@@ -52,4 +52,6 @@ There is no WebGPU/WebGL simulation or remote inference. Canvas drawing time is 
 
 ## Boundaries
 
+The browser automation tool rejects local `file:` URLs. Direct double-click execution was therefore not verified, and no alternate browser or security workaround was used. The runtime uses ordinary local scripts, built-in gzip decoding and a Blob worker so it is designed to work without a server. Automated runtime checks use HTTP. Safari and Firefox execution were not tested.
+
 Browser rendering and neural/physical causality are distinct checks. The drawing is an anatomical illustration, with fixed legs and wings and moving mouthparts. Its proportions, mechanics and contact geometry have not been fitted to tracked animal motion. No accessibility certification, full physiological fidelity, ingestion, locomotion or whole-animal reconstruction is claimed.

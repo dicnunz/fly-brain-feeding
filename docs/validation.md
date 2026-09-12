@@ -52,6 +52,10 @@ There is no WebGPU/WebGL simulation or remote inference. Canvas drawing time is 
 
 ## Boundaries
 
+## Publication checks
+
+The public GitHub Pages version was loaded and interacted with: sugar activated MN9 and extended the joint; bitter coactivation suppressed both. All 15 tests also passed in a fresh GitHub clone and in GitHub Actions. Repository files were compared by hash with the local publication set, including the complete neural data and preview image. The downloadable ZIP was downloaded through its public release URL and matched the local archive's SHA-256. Archive CRCs and every contained file were checked. Its extracted contents were independently opened over local HTTP and exercised, including a paused reset that cleared all displayed counters.
+
 The browser automation tool rejects local `file:` URLs. Direct double-click execution was therefore not verified, and no alternate browser or security workaround was used. The runtime uses ordinary local scripts, built-in gzip decoding and a Blob worker so it is designed to work without a server. Automated runtime checks use HTTP. Safari and Firefox execution were not tested.
 
 Browser rendering and neural/physical causality are distinct checks. The drawing is an anatomical illustration, with fixed legs and wings and moving mouthparts. Its proportions, mechanics and contact geometry have not been fitted to tracked animal motion. No accessibility certification, full physiological fidelity, ingestion, locomotion or whole-animal reconstruction is claimed.

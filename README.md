@@ -10,7 +10,7 @@ To keep an offline copy, **[download fly-brain-feeding.zip](https://github.com/d
 
 No GitHub account, Git, terminal, installation, paid service or remote inference is needed to use the experiment. This repository is simply the project folder and its supporting files. You can ignore GitHub’s Code menu, branches, commits, Issues and Actions.
 
-![The running feeding experiment: a lateral fly, contact droplet and computed motor signals.](docs/experiment.png)
+![The running feeding experiment: a lateral fly, contact droplet and computed motor signals.](docs/experiment.jpg)
 
 ## What the fly does
 
